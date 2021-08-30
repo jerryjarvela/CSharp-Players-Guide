@@ -41,4 +41,82 @@ Console.WriteLine("How would you describe it? Big? Azure? Tattered?");
 string b = Console.ReadLine();
 string c = "of Doom";
 string d = "3000";
-Console.WriteLine("The " + a + " " + b + " of " + c + " " + d + "!");
+Console.WriteLine("The " + a + " " + b +  c + " " + d + "!");
+
+Console.WriteLine("hello world");
+
+int integer = 1;
+short short1 = 2; 
+long long1 = 3;
+byte byte1 = 4;
+sbyte sbyte1 = 5;
+uint uint1 = 6;
+ushort ushort1 = 7;
+ulong ulong1 = 8;
+char char1 = 'A';
+string message = "hello world!";
+float float1 = 1.234F;
+double double1 = 1.234;
+decimal decimal1 = 1.0m;
+bool isBool = true;
+
+Console.WriteLine(integer);
+Console.WriteLine(short1);
+Console.WriteLine(long1);
+Console.WriteLine(byte1);
+Console.WriteLine(sbyte1);
+Console.WriteLine(uint1);
+Console.WriteLine(ushort1);
+Console.WriteLine(ulong1);
+Console.WriteLine(char1);
+Console.WriteLine(message);
+Console.WriteLine(float1);
+Console.WriteLine(double1);
+Console.WriteLine(decimal1);
+Console.WriteLine(isBool);
+
+integer = 0;
+short1 = 1;
+long1 = 2;
+byte1 = 3;
+sbyte1 = 4;
+uint1 = 5;
+ushort1 = 6;
+ulong1 = 7;
+char1 = 'B';
+message = "Henlo goob";
+float1 = -1.1234F;
+double1 = -1.1234;
+decimal1 = -1.1234m;
+isBool = false;
+
+Console.WriteLine(integer);
+Console.WriteLine(short1);
+Console.WriteLine(long1);
+Console.WriteLine(byte1);
+Console.WriteLine(sbyte1);
+Console.WriteLine(uint1);
+Console.WriteLine(ushort1);
+Console.WriteLine(ulong1);
+Console.WriteLine(char1);
+Console.WriteLine(message);
+Console.WriteLine(float1);
+Console.WriteLine(double1);
+Console.WriteLine(decimal1);
+Console.WriteLine(isBool);
+
+int area;
+Console.WriteLine("Please input triangle size: ");
+string baseSize = Console.ReadLine();
+Console.WriteLine("Please input triangle size: ");
+string baseHeight = Console.ReadLine();
+
+area = (int.Parse(baseSize) * int.Parse(baseHeight)) / 2;
+
+Console.WriteLine("The triangle area is: " + area);
+
+Console.WriteLine("Please enter the number of daily chocolate eggs: ");
+string eggs = Console.ReadLine();
+int parse = (int.Parse(eggs) / 4) % 4;
+Console.WriteLine("Number of chocolate eggs remainder: ");
+Console.Write(parse);
