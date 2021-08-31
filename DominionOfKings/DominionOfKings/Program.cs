@@ -5,6 +5,8 @@ int provinceValue = 6;
 int duchyValue = 3;
 int estateValue = 1;
 
+//Console.Title = "Dominion of Kings";
+
 Console.Write("Enter amount of provinces: ");
 int provinces = Convert.ToInt32(Console.ReadLine());
 int provinceScore = provinces * provinceValue;
@@ -19,3 +21,6 @@ int estateScore = estates * estateValue;
 
 score = provinceScore + duchyScore + estateScore;
 Console.WriteLine("Total points: " + score);
+
+Console.WriteLine("Press any key to exit the program..");
+Console.ReadKey(true);
