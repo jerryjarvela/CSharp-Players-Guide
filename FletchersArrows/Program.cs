@@ -1,11 +1,25 @@
 ﻿using System;
 
-Arrow arrow = GetArrow();
+Console.WriteLine("What arrow do you want?");
+Console.WriteLine("1 - Beginner Arrow");
+Console.WriteLine("2 - Marksman Arrow");
+Console.WriteLine("3 - Elite Arrow");
+Console.WriteLine("4 - Custom Arrow");
+
+string playerChoice = Console.ReadLine();
+
+Arrow arrow = playerChoice switch
+{
+    "1" => Arrow.CreateBeginnerArrow(),
+    "2" => Arrow.CreateMarksmanArrow(),
+    "3" => Arrow.CreateEliteArrow(),
+    "4" => CreateCustomArrow()
+};
+
 Console.WriteLine($"That arrow costs {arrow.GetCost()} gold.");
 
 
-
-Arrow GetArrow()
+Arrow CreateCustomArrow()
 {
     Arrowhead arrowhead = GetArrowheadType();
     Fletching fletching = GetFletchingType();
